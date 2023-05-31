@@ -29,4 +29,7 @@ import { PostItem } from './models/post-item';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+}

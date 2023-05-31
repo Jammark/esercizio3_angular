@@ -2,5 +2,6 @@ export interface Post {
   title:string,
   content:string,
   id:number,
-  active:boolean
+  active:boolean,
+  type:string
 }

@@ -6,10 +6,12 @@ export class PostItem implements Post{
   id:number;
   content:string;
   active:boolean;
-  constructor(_title:string, _id:number, _content:string, _active:boolean){
+  type:string;
+  constructor(_title:string, _id:number, _content:string, _active:boolean, _type:string){
     this.title = _title;
     this.id= _id;
     this.content= _content;
     this.active = _active;
+    this.type = _type;
   }
 }

@@ -1,4 +1,4 @@
-<div class="card mx-3 my-4" *ngIf="active == post?.active">
+<div class="card mx-3 my-4" *ngIf="active == post?.active" [ngClass]="post?.type">
   <div class="card-header">
     <h1>Post</h1>
   </div>
@@ -8,7 +8,8 @@
   <h6 class="card-text">{{post?.content}}</h6>
 
 </div>
-<div class="card-footer bg-info">
-  <p class="card-text">post id: {{post?.id}}</p>
+<div class="card-footer">
+  <p class="card-text bg-info">post id: {{post?.id}}</p>
+  <ng-content></ng-content>
 </div>
   </div>
