@@ -1,0 +1,14 @@
+<div class="card mx-3 my-4" *ngIf="active == post?.active">
+  <div class="card-header">
+    <h1>Post</h1>
+  </div>
+  <div class="card-body">
+
+  <h5 class="card-title">{{post?.title}}</h5>
+  <h6 class="card-text">{{post?.content}}</h6>
+
+</div>
+<div class="card-footer bg-info">
+  <p class="card-text">post id: {{post?.id}}</p>
+</div>
+  </div>
